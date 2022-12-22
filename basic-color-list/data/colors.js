@@ -7,6 +7,8 @@ const COLORS = [
   { colorName: 'Blue', hexCode: '#268bd2' },
   { colorName: 'Cyan', hexCode: '#2aa198' },
   { colorName: 'Green', hexCode: '#859900' },
+  { colorName: 'Black', hexCode: '#222222' },
+  { colorName: 'Light Gray', hexCode: '#EEEEEE' },
 ];
 
 export default COLORS;

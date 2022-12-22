@@ -2,21 +2,32 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: 10,
-    paddingHorizontal: 10,
+    backgroundColor: 'white',
+    paddingVertical: 24,
+    paddingHorizontal: 24,
   },
   safeArea: {
     flex: 1,
   },
   boldText: {
     fontWeight: 'bold',
-    fontSize: 18,
   },
   box: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginVertical: 5,
-    padding: 10,
+    padding: 12,
+  },
+  button: {
+    color: 'white',
+    backgroundColor: '#003366',
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+  },
+  fzMedium: {
+    fontSize: 18,
+  },
+  fzLarge: {
+    fontSize: 22,
   },
 });
 

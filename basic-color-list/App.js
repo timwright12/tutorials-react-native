@@ -12,9 +12,12 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="ColorPalette" component={ColorPalette} />
-        <Stack.Screen name="ColorDetails" component={ColorDetails} />
+        <Stack.Screen name="Home" component={Home} options={{ title: 'Homepage' }} />
+        <Stack.Screen name="ColorPalette" component={ColorPalette} options={{ title: 'Color Palette' }} />
+        <Stack.Screen 
+          name="ColorDetails" 
+          component={ColorDetails} 
+          options={({ route }) => ({ title: route.params.colorName })} />
       </Stack.Navigator>
     </NavigationContainer>
   );

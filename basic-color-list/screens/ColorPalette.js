@@ -19,8 +19,7 @@ const ColorPalette = ({ navigation }) => {
             <ColorBox colorName={item.colorName} hexCode={item.hexCode} />
           </TouchableOpacity>
         )}
-        ListHeaderComponent={<Text style={styles.boldText}>List Header</Text>}
-        ListFooterComponent={<Text style={styles.boldText}>List Footer</Text>}
+        ListHeaderComponent={<Text style={[styles.fzLarge, styles.boldText]}>A List of Colors</Text>}
       />
     </>
   );
