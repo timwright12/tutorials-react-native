@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
+import styles from '../styles/styles'
 
 const ColorBox = ({ colorName, hexCode }) => {
   const boxColor = {
@@ -7,24 +8,11 @@ const ColorBox = ({ colorName, hexCode }) => {
   };
   return (
     <View style={[styles.box, boxColor]}>
-      <Text style={[styles.boldText]}>
+      <Text>
         This is {colorName}: {hexCode}
       </Text>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  boldText: {
-    fontWeight: 'bold',
-    fontSize: 18,
-  },
-  box: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginVertical: 5,
-    padding: 10,
-  },
-});
 
 export default ColorBox;
